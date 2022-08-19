@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login - Nubank</title>
+    <link rel="icon" type="imagem/png" href="images/nu-icon.png" >
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo-r" src="images/new-logo-white.svg" alt="Logo branca do Nubank">
+       </div>
+       <form class="form">
+            <div>
+                <p id="login">Faça seu login</p>
+                <p id="text-cpf">CPF</p>
+                <p><input id="cpf" type="text" onkeyup="cpfCheck(this)" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );" required> <span id="cpfResponse"></span></p>
+                <p id="text-senha">Senha</p>
+                <p><input id="senha" type="password" maxlength="8" required></p>
+                <button class="bto"><a href="#">Continuar</a></button>
+                <p class="ems"><a href="#">Esqueci minha senha</a></p>
+                <p class="ansc"><a href="#">Ainda não sou cliente</a></p>
+            </div>
+       </form>
+    </header>
+<script src="script.js"></script>
+</body>
+</html>
